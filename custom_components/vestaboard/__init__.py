@@ -257,7 +257,7 @@ async def async_setup_entry(hass, config):
 
     await hass.config_entries.async_forward_entry_setups(
         config,
-        ["sensor"],
+        ["sensor", "text"],
     )
 
     async def post(call):
